@@ -69,11 +69,11 @@ In this Hands-On Lab, you will learn how to:
 The following is required to complete this hands-on lab:
 
 - [Microsoft .NET Framework 4.0](http://go.microsoft.com/fwlink/?linkid=186916)
-- [Microsoft Visual Studio 2010](http://msdn.microsoft.com/vstudio/products/)
+- [Microsoft Visual Studio 2012](http://msdn.microsoft.com/vstudio/products/)
 - [Windows Azure SDK and Windows Azure Tools for Microsoft Visual Studio 1.7](http://www.microsoft.com/windowsazure/sdk/)
 - A Windows Azure subscription - [sign up for a free trial](http://aka.ms/WATK-FreeTrial)
 
->**Note:** This lab was designed to use Windows 7 Operating System.
+>**Note:** This lab was designed to use Windows 8 Operating System.
 
 ---
 
@@ -107,7 +107,7 @@ In this exercise, you publish the application to multiple cloud services in your
 
 In this task, you prepare the application for deployment by enabling remote desktop access.
 
-1. Open Visual Studio in elevated administrator mode from **Start** | **All Programs** | **Microsoft Visual Studio 2010** by right-clicking the **Microsoft Visual Studio 2010** shortcut and choosing **Run as administrator**.
+1. Open Visual Studio in elevated administrator mode from **Start** | **All Programs** | **Microsoft Visual Studio 2012** by right-clicking the **Microsoft Visual Studio 2012** shortcut and choosing **Run as administrator**.
 
 1. If the **User Account Control** dialog appears, confirm that you wish to proceed.
 
@@ -177,7 +177,7 @@ To create a cloud service and deploy the application:
 
 1. Navigate to the [Windows Azure Management Portal](http://manage.windowsazure.com/) and log in with your Microsoft Account's credentials.
 
-1. Click **New** | **Cloud Service** | **Quick Create**. Select a unique **URL** for your service, for example _worldapp-europe-north_. Refer to the table at the start of this task for suggested values. The dialog validates the URL prefix as you type it and warns you if the one you choose is unavailable.
+1. Click **New** | **Compute** | **Cloud Service** | **Quick Create**. Select a unique **URL** for your service, for example _worldapp-north-europe_. Refer to the table at the start of this task for suggested values. The dialog validates the URL prefix as you type it and warns you if the one you choose is unavailable.
 
 1. To choose a region for the service, expand the drop down list labeled **Region / Affinity Group** and pick the region that corresponds to the service name and URL prefix used. Click **Create Cloud Service**.
 
