@@ -1,7 +1,6 @@
 ﻿namespace WorldApp
 {
     using Microsoft.WindowsAzure;
-    using Microsoft.WindowsAzure.ServiceRuntime;
     using System.Web;
     using System.Web.Http;
     using System.Web.Mvc;
@@ -26,13 +25,13 @@
 
             CloudStorageAccount.SetConfigurationSettingPublisher((configName, configSetter) =>
             {
-                configSetter(RoleEnvironment.GetConfigurationSettingValue(configName));
+                configSetter(CloudConfigurationManager.GetSetting(configName));
             });
 
             HttpContext.Current = null;
             ServiceManager manager = new ServiceManager();
-            string serviceRegion = RoleEnvironment.GetConfigurationSettingValue("HostedServiceRegion");
-            string serviceUrlPrefix = RoleEnvironment.GetConfigurationSettingValue("HostedServiceUrlPrefix");
+            string serviceRegion = CloudConfigurationManager.GetSetting("HostedServiceRegion");
+            string serviceUrlPrefix = CloudConfigurationManager.GetSetting("HostedServiceUrlPrefix");
             manager.InitializeHostedServiceStatus(serviceRegion, serviceUrlPrefix);
         }
     }

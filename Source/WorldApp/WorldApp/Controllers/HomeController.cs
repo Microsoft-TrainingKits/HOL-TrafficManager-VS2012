@@ -1,6 +1,6 @@
 ﻿namespace WorldApp.Controllers
 {
-    using Microsoft.WindowsAzure.ServiceRuntime;
+    using Microsoft.WindowsAzure;
     using System.Web.Mvc;
     using WorldApp.Models;
     using WorldApp.Services;
@@ -15,8 +15,8 @@
                 ClientIPAddress = Request.UserHostAddress,
                 ClientHostName = Request.UserHostName,
                 ServerName = Request["SERVER_NAME"],
-                CurrentRegion = RoleEnvironment.GetConfigurationSettingValue("HostedServiceRegion"),
-                DnsTtl = RoleEnvironment.GetConfigurationSettingValue("DnsTtl")
+                CurrentRegion = CloudConfigurationManager.GetSetting("HostedServiceRegion"),
+                DnsTtl = CloudConfigurationManager.GetSetting("DnsTtl")
             };
 
             ServiceManager manager = new ServiceManager();

@@ -1,14 +1,14 @@
 ﻿namespace WorldApp.Controllers
 {
+    using Microsoft.WindowsAzure;
     using System.Web.Mvc;
-    using Microsoft.WindowsAzure.ServiceRuntime;
     using WorldApp.Services;
 
     public class AppHealthController : Controller
     {
         public ActionResult Index()
         {
-            string serviceUrlPrefix = RoleEnvironment.GetConfigurationSettingValue("HostedServiceUrlPrefix");
+            string serviceUrlPrefix = CloudConfigurationManager.GetSetting("HostedServiceUrlPrefix");
 
             ServiceManager manager = new ServiceManager();
             bool appIsOnline = manager.GetHostedServiceStatus(serviceUrlPrefix);

@@ -754,3 +754,41 @@ tr.pager td {
             margin: 0;
         }
 }
+
+/* Styles for master page
+----------------------------------------------------------*/        
+.region
+{
+    color: #999;
+    font-size: smaller;
+    padding: 0.2em;
+    border-left: 4px solid #999;
+}
+
+/* Styles for home page
+----------------------------------------------------------*/        
+#services
+{
+    width: 100%;
+}
+        
+.fieldvalue
+{
+    font-weight: bold;
+}
+        
+.expired
+{
+    color: Red;
+}
+        
+.online
+{
+    color: Green;
+}
+        
+.offline
+{
+    color: Red;
+}
+
