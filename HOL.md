@@ -382,7 +382,7 @@ In this task, you test the performance policy defined previously. First, you tes
 
 	> **Note:** For a performance policy, the load balancer determines which cloud service responds to a client request based on tables that record the round trip time between various IP addresses around the globe and each Windows Azure data center. Note, however, that while there is a strong correlation between distance and network latency and you would normally receive a response from the cloud service closest to your current location, other factors such as network topology and congestion could determine that you receive a response from a service that is further away.
 
-1. Now, in the navigation pane of the Windows Azure Management Portal, select the **Cloud Services, Storage Accounts & CDN** tab and then the **Cloud Services** option.
+1. Now, in the navigation pane of the Windows Azure Management Portal, select the **Hosted Services, Storage Accounts & CDN** tab and then the **Hosted Services** option.
 
 1. Locate one of the cloud services created for this hands-on lab and expand its node to show its instances. Select one of the instances and then click **Connect** on the ribbon to open a remote desktop session to that instance.
 
