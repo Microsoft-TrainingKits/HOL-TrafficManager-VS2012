@@ -107,7 +107,7 @@ In this exercise, you publish the application to multiple cloud services in your
 
 In this task, you prepare the application for deployment by enabling remote desktop access.
 
-1. Open Visual Studio in elevated administrator mode from **Start** | **All Programs** | **Microsoft Visual Studio 2012** by right-clicking the **Microsoft Visual Studio 2012** shortcut and choosing **Run as administrator**.
+1. Open **Microsoft Visual Studio 2012** in elevated administrator mode by right-clicking the **Microsoft Visual Studio 2012** shortcut and choosing **Run as administrator**.
 
 1. If the **User Account Control** dialog appears, confirm that you wish to proceed.
 
