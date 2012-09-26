@@ -169,7 +169,7 @@ The following procedure describes the steps required to create a cloud service a
 |------------------------------|---------------------------|------------------|----------------|
 [appname]-europe-north    | North Europe     | _#5c87b2_      |
 [appname]-us-northcentral | North Central US | _#ff9900_      |
-[appname]-asia-east       | East Asia        | _#99ff66_      |
+[appname]-asia-east       | East Asia        | _#993333_      |
 
 The pattern followed by the cloud service URL prefix is **_[appname]-[region]_**, where **_[appname]_** is a unique identifier common to all cloud services that you deploy during this hands-on lab and **_[region]_** is the Windows Azure region where the service is created. The full URL of a cloud service is based on its URL prefix and public so you must choose the **_[appname]_** portion to avoid colliding with cloud services from other users.
 
