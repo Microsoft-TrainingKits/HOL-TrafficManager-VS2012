@@ -46,7 +46,7 @@ Some of these features are:
 
 1. A timer-restarted after every change in the status of a service-that shows elapsed time since a change in the state of a service and estimating how long it takes Traffic Manager to become aware of the change
 
-	![Home page of the World Application](images/home-page-of-the-world-application.png?raw=true "Home page of the World Application")
+	![Home page of the World Application](Images/home-page-of-the-world-application.png?raw=true "Home page of the World Application")
 
 	_Home page of the World Application_
 
@@ -117,7 +117,7 @@ In this task, you prepare the application for deployment by enabling remote desk
 
 1. In the **Remote Desktop Configuration** dialog, check **Enable connections for all Roles**.
 
-	![Configuring Remote Desktop settings](images/configuring-remote-desktop-settings-for-all-r.png?raw=true "Configuring Remote Desktop settings")
+	![Configuring Remote Desktop settings](Images/configuring-remote-desktop-settings-for-all-r.png?raw=true "Configuring Remote Desktop settings")
 
 	_Configuring Remote Desktop settings_
 
@@ -125,13 +125,13 @@ In this task, you prepare the application for deployment by enabling remote desk
 
 1. In the **Create Certificate** dialog, enter a name to identify the certificate, for example, _AzureRemote_, and then click **OK**.
 
-	![Creating a certificate for Remote Desktop connections](images/creating-a-certificate-for-remote-desktop-con.png?raw=true "Creating a certificate for Remote Desktop connections")
+	![Creating a certificate for Remote Desktop connections](Images/creating-a-certificate-for-remote-desktop-con.png?raw=true "Creating a certificate for Remote Desktop connections")
 
 	_Creating a certificate for Remote Desktop connections_
 
 1. Now, back in the **Remote Desktop Configuration** dialog, choose the newly created certificate from the drop down list, enter the name of the user that you will use to connect remotely to your role-this can be any name of your choice-enter a password and confirm it, and leave the account expiration date unchanged.
 
-	![Configuring Remote Desktop settings](images/configuring-remote-desktop-settings.png?raw=true "Configuring Remote Desktop settings")
+	![Configuring Remote Desktop settings](Images/configuring-remote-desktop-settings.png?raw=true "Configuring Remote Desktop settings")
 
 	_Configuring Remote Desktop settings_
 
@@ -150,7 +150,7 @@ In this task, you configure the credentials used by the application to access yo
 
 1. In the **WorldApp [role]** properties window, select the **Settings** tab, and then locate the **DataConnectionString** setting. Replace the placeholder labeled _[YOUR_STORAGE_ACCOUNT_NAME]_ with the name of your storage account and _[YOUR_STORAGE_ACCOUNT_KEY]_ with its key.
 
-	![Configuring storage account credentials in Visual Studio](images/configuring-storage-account-credentials-in-vi.png?raw=true "Configuring storage account credentials in Visual Studio")
+	![Configuring storage account credentials in Visual Studio](Images/configuring-storage-account-credentials-in-vi.png?raw=true "Configuring storage account credentials in Visual Studio")
 
 	_Configuring storage account credentials in Visual Studio_
 
@@ -181,19 +181,19 @@ To create a cloud service and deploy the application:
 
 1. To choose a region for the service, expand the drop down list labeled **Region / Affinity Group** and pick the region that corresponds to the service name and URL prefix used. Click **Create Cloud Service**.
 
-	![Creating a new Cloud Service in Windows Azure](images/creating-a-new-cloud-service-in-windows-azure.png?raw=true "Creating a new Cloud Service in Windows Azure")
+	![Creating a new Cloud Service in Windows Azure](Images/creating-a-new-cloud-service-in-windows-azure.png?raw=true "Creating a new Cloud Service in Windows Azure")
 
 	_Creating a new Cloud Service in Windows Azure_
 
 1. Upload the certificate used to encrypt the Remote Desktop password to the newly created service. To do this, select **Cloud Services** from the left pane, and click the name of the service you just created. Then, click **Certificates** from the top of the cloud service.
 
-	![Configuring the Cloud Service certificate](images/configuring-the-cloud-service-certificate.png?raw=true "Configuring the Cloud Service certificate")
+	![Configuring the Cloud Service certificate](Images/configuring-the-cloud-service-certificate.png?raw=true "Configuring the Cloud Service certificate")
 
 	_Configuring the Cloud Service certificate_
 
 1. In the **Upload Certificate** dialog, select the certificate you created and exported during the previous task when you configured remote desktop, enter the assigned password, anc click **tick**.
 
-	![Uploading the Cloud Service certificate](images/uploading-the-cloud-service-certificate.png?raw=true "Uploading the Cloud Service certificate")
+	![Uploading the Cloud Service certificate](Images/uploading-the-cloud-service-certificate.png?raw=true "Uploading the Cloud Service certificate")
 
 	_Uploading the Cloud Service certificate_
 
@@ -203,7 +203,7 @@ To create a cloud service and deploy the application:
 
 1. In the **Settings** page, set the _HostedServiceRegion_, _HostedServiceUrlPrefix_, and _HostedServiceBackgroundColor_ settings to the values in the table at the start of this task that match the region chosen for this service.
 
-	![Configuring the application based on its Windows Azure deployment region](images/configuring-the-application-based-on-its-wind.png?raw=true "Configuring the application based on its Windows Azure deployment region")
+	![Configuring the application based on its Windows Azure deployment region](Images/configuring-the-application-based-on-its-wind.png?raw=true "Configuring the application based on its Windows Azure deployment region")
 
 	_Configuring the application based on its Windows Azure deployment region_
 
@@ -215,7 +215,7 @@ To create a cloud service and deploy the application:
 
 1. Next, select the cloud service you created for this region and set its **environment** to **Production**. Click **Publish** to begin the deployment.
 
-	![Deploying the application to Windows Azure](images/deploying-the-application-to-windows-azure.png?raw=true "Deploying the application to Windows Azure")
+	![Deploying the application to Windows Azure](Images/deploying-the-application-to-windows-azure.png?raw=true "Deploying the application to Windows Azure")
 
 	_Deploying the application to Windows Azure_
 
@@ -223,7 +223,7 @@ To create a cloud service and deploy the application:
 
 1. After you start a deployment, you can examine the Windows Azure activity log window to determine the status of the operation. If this window is not visible, in the **View** menu, point to **Other Windows**, and then select **Windows Azure Activity Log**.  By default, the log shows a descriptive message and a progress bar to indicate the status of the deployment operation. To view detailed information about the operation in progress, click the green arrow on the left side of the activity log entry.
 
-	![Monitoring the progress of the deployment operation](images/monitoring-the-progress-of-the-deployment-ope.png?raw=true "Monitoring the progress of the deployment operation")
+	![Monitoring the progress of the deployment operation](Images/monitoring-the-progress-of-the-deployment-ope.png?raw=true "Monitoring the progress of the deployment operation")
 
 	_Monitoring the progress of the deployment operation_
 
@@ -250,19 +250,19 @@ In this task, you open a remote desktop session to a role instance in each of th
 
 1. In the Management Portal, locate your cloud service and click on its name to see the service management page. Click **Configure** from the top menu and then click **Remote** from the bottom pane.
 	
-	![Establishing a remote desktop session to a role instance](images/establishing-a-remote-desktop-session-to-a-ro.png?raw=true "Establishing a remote desktop session to a role instance")
+	![Establishing a remote desktop session to a role instance](Images/establishing-a-remote-desktop-session-to-a-ro.png?raw=true "Establishing a remote desktop session to a role instance")
 
 	_Establishing a remote desktop session to a role instance_
 
 1. Click **Open** in Internet Explorer prompt to begin the Remote Connection.
 
-	![Opening the Remote Desktop Connection](images/opening-the-remote-desktop-connection.png?raw=true "Opening the Remote Desktop Connection")
+	![Opening the Remote Desktop Connection](Images/opening-the-remote-desktop-connection.png?raw=true "Opening the Remote Desktop Connection")
 
 	_Opening the Remote Desktop Connection_
 
 1. Enter the remote connection account credentials you specified during Task1 of this exercise.
 
-	![Remote connection account credentials](images/remote-connection-account-credentials.png?raw=true "Remote connection account credentials")
+	![Remote connection account credentials](Images/remote-connection-account-credentials.png?raw=true "Remote connection account credentials")
 
 	_Remote connection account credentials_
 
@@ -270,13 +270,13 @@ In this task, you open a remote desktop session to a role instance in each of th
 
 1. If access to the site is blocked by Internet Explorer’s enhanced security configuration, click **Add**.
 
-	![Internet Explorer enhanced security configuration warning](images/internet-explorer-enhanced-security-configura.png?raw=true "Internet Explorer enhanced security configuration warning")
+	![Internet Explorer enhanced security configuration warning](Images/internet-explorer-enhanced-security-configura.png?raw=true "Internet Explorer enhanced security configuration warning")
 
 	_Internet Explorer enhanced security configuration warning_
 
 1. In the **Trusted Sites** dialog, click **Add** to insert the URL that you typed in the browser’s address bar to the trusted websites list. 
 
-	![Adding the Traffic Manager to the trusted sites zone](images/adding-the-traffic-manager-to-the-trusted-sit.png?raw=true "Adding the Traffic Manager to the trusted sites zone")
+	![Adding the Traffic Manager to the trusted sites zone](Images/adding-the-traffic-manager-to-the-trusted-sit.png?raw=true "Adding the Traffic Manager to the trusted sites zone")
 
 	_Adding the Traffic Manager to the trusted sites zone_
 	
@@ -286,25 +286,25 @@ In this task, you open a remote desktop session to a role instance in each of th
 
 1. Now, from the home page, download the registry script to configure the browser and shorten the lifetime of host entries in its DNS cache.
 
-	![Downloading the browser DNS cache configuration script](images/downloading-the-browser-dns-cache-configurati.png?raw=true "Downloading the browser DNS cache configuration script")
+	![Downloading the browser DNS cache configuration script](Images/downloading-the-browser-dns-cache-configurati.png?raw=true "Downloading the browser DNS cache configuration script")
 
 	_Downloading the browser DNS cache configuration script_
 
 1. In the **File Download** dialog, click **Run** to launch the registry configuration script.
 
-	![Configuring the DNS cache of the browser](images/configuring-the-dns-cache-of-the-browser.png?raw=true "Configuring the DNS cache of the browser")
+	![Configuring the DNS cache of the browser](Images/configuring-the-dns-cache-of-the-browser.png?raw=true "Configuring the DNS cache of the browser")
 
 	_Configuring the DNS cache of the browser_
 
 1. When prompted by the Registry Editor, click **Yes** to confirm that you wish to execute the script.
 
-	![Registry editor security warning](images/registry-editor-security-warning.png?raw=true "Registry editor security warning")
+	![Registry editor security warning](Images/registry-editor-security-warning.png?raw=true "Registry editor security warning")
 
 	_Registry editor security warning_
 
 1. Click **OK** to close the message box confirming the successful update of the registry.
 
-	![Successful update of the browser’s configuration](images/successful-update-of-the-browsers-configurati.png?raw=true "Successful update of the browser’s configuration")
+	![Successful update of the browser’s configuration](Images/successful-update-of-the-browsers-configurati.png?raw=true "Successful update of the browser’s configuration")
 
 	_Successful update of the browser’s configuration_
 
@@ -329,13 +329,13 @@ In this task, you define a Traffic Manager policy that maximizes performance by 
 
 1. To use the Traffic Manager, you need to access the previous management portal version. In order to do this, hover the mouse pointer over **Preview** in the main page header and click **Take me to the previous portal**.
 
-	![Switching to the Previous Portal](images/switch-to-previous-portal.png?raw=true "Switching to the Prodution Portal")
+	![Switching to the Previous Portal](Images/switch-to-previous-portal.png?raw=true "Switching to the Prodution Portal")
 
 	_Switching to the previous portal_
 
 1. Once in the Production Portal, select the **Virtual Network** tab. Then, choose the **Policies** option under **Traffic Manager** and click **Create** on the ribbon.
 
-	![Creating a Traffic Manager policy](images/creating-a-windows-azure-traffic-manager-poli.png?raw=true "Creating a Traffic Manager policy")
+	![Creating a Traffic Manager policy](Images/creating-a-windows-azure-traffic-manager-poli.png?raw=true "Creating a Traffic Manager policy")
 
 	_Creating a Traffic Manager policy_
 
@@ -361,7 +361,7 @@ In this task, you define a Traffic Manager policy that maximizes performance by 
 
 	> **Note:** The TTL determines for how long clients and secondary DNS servers cache a DNS host entry. Clients will continue to use a given cloud service until its entry in the cache expires.  For this hands-on lab, the TTL is set to the lowest possible value to allow policy results and changes in the status of services to be seen as early as possible. Note, however, that lowering this value increases DNS traffic and that you should consider keeping its default value for your production services.
 
-	![Creating a Traffic Manager policy for load balancing based on network performance](images/creating-a-traffic-manager-policy-for-load-ba.png?raw=true "Creating a Traffic Manager policy for load balancing based on network performance")
+	![Creating a Traffic Manager policy for load balancing based on network performance](Images/creating-a-traffic-manager-policy-for-load-ba.png?raw=true "Creating a Traffic Manager policy for load balancing based on network performance")
 
 	_Creating a Traffic Manager policy for load balancing based on network performance_
 
@@ -376,7 +376,7 @@ In this task, you test the performance policy defined previously. First, you tes
 
 1. Open a browser window and navigate to _http://performance.[appname].trafficmanager.net/_, where _performance.[appname]_ is the DNS prefix name that you configured for the performance policy created in the previous task.  Notice the distinctive background color and the label in the first paragraph indicating the location of the cloud service that replies to the request. Verify that the response originated from the service closest to your current location.
 
-	![Testing the Traffic Manager performance policy in your own machine](images/testing-the-traffic-manager-performance-polic.png?raw=true "Testing the Traffic Manager performance policy in your own machine")
+	![Testing the Traffic Manager performance policy in your own machine](Images/testing-the-traffic-manager-performance-polic.png?raw=true "Testing the Traffic Manager performance policy in your own machine")
 
 	_Testing the Traffic Manager performance policy in your own machine_
 
@@ -401,13 +401,13 @@ In this task, you test the performance policy defined previously. First, you tes
 
 	Notice the **Name** and **Address** returned by the DNS query, which should match that of the cloud service nearest to your current location.
 
-	![Using nslookup to determine the address returned by the performance policy](images/using-nslookup-to-determine-the-address-retur.png?raw=true "Using nslookup to determine the address returned by the performance policy")
+	![Using nslookup to determine the address returned by the performance policy](Images/using-nslookup-to-determine-the-address-retur.png?raw=true "Using nslookup to determine the address returned by the performance policy")
 
 	_Using nslookup to determine the address returned by the performance policy_
 
 1. Next, open a remote desktop session to each of the other regions and repeat the previous steps to access the application from that region.  Verify that in all cases, the response originates from the service hosted in the region where the remote desktop session is established.
  
-	![Testing the performance policy from different geographic regions](images/testing-the-performance-policy-from-different.png?raw=true "Testing the performance policy from different geographic regions")
+	![Testing the performance policy from different geographic regions](Images/testing-the-performance-policy-from-different.png?raw=true "Testing the performance policy from different geographic regions")
 
 	_Testing the performance policy from different geographic regions_
 
@@ -422,7 +422,7 @@ In this task, you place the cloud service that is currently servicing your reque
 
 1. Now, locate this region in the **Hosted Service Status** table and click **Disable** to set its state to _Offline_. Notice that the Health Monitor Timeout column starts a timer that shows the elapsed time since the state of the service changed.
 
-	![Simulating the failure of a cloud service](images/simulating-the-failure-of-a-hosted-service.png?raw=true "Simulating the failure of a cloud service")
+	![Simulating the failure of a cloud service](Images/simulating-the-failure-of-a-hosted-service.png?raw=true "Simulating the failure of a cloud service")
 
 	_Simulating the failure of a cloud service_
  
@@ -472,7 +472,7 @@ In this task, you create a Traffic Manager policy that balances traffic evenly a
 
 1. Now, set the DNS time to live (TTL) to 30 seconds.
 
-	![Creating a Traffic Manager policy for load balancing traffic equally across cloud services](images/creating-a-traffic-manager-policy-for-hosted.png?raw=true "Creating a Traffic Manager policy for load balancing traffic equally across cloud services")
+	![Creating a Traffic Manager policy for load balancing traffic equally across cloud services](Images/creating-a-traffic-manager-policy-for-hosted.png?raw=true "Creating a Traffic Manager policy for load balancing traffic equally across cloud services")
 
 	_Creating a Traffic Manager policy for load balancing traffic equally across cloud services_
 
@@ -493,7 +493,7 @@ In this task, you test the round robin policy created during the previous task.
 
 1. Wait for at least 30 seconds, which is the TTL configured for the current policy. For your convenience, a timer on the page provides a visual estimate of the remaining time. 
 
-	![DNS host entry TTL](images/dns-host-entry-ttl.png?raw=true "DNS host entry TTL")
+	![DNS host entry TTL](Images/dns-host-entry-ttl.png?raw=true "DNS host entry TTL")
 
 	_DNS host entry TTL_
 
@@ -501,7 +501,7 @@ In this task, you test the round robin policy created during the previous task.
 
 1. Wait until the TTL expires again and refresh the page one more time to verify that origin of the response has changed yet again.
  
-	![Testing the round robin performance policy](images/testing-the-round-robin-performance-policy.png?raw=true "Testing the round robin performance policy")
+	![Testing the round robin performance policy](Images/testing-the-round-robin-performance-policy.png?raw=true "Testing the round robin performance policy")
 
 	_Testing the round robin performance policy_
 
@@ -514,7 +514,7 @@ In this task, you test the round robin policy created during the previous task.
 
 1. Repeat the command several times while waiting at least 30 seconds between attempts to allow the TTL to expire. Verify that the returned host cycles between each of the cloud services assigned to the round robin policy. 
 
-	![Using nslookup to evaluate the round robin policy](images/using-nslookup-to-evaluate-the-round-robin-po.png?raw=true "Using nslookup to evaluate the round robin policy")
+	![Using nslookup to evaluate the round robin policy](Images/using-nslookup-to-evaluate-the-round-robin-po.png?raw=true "Using nslookup to evaluate the round robin policy")
 
 	_Using nslookup to evaluate the round robin policy_
 
@@ -548,7 +548,7 @@ In this task, you create a Traffic Manager policy that contains an ordered list 
 
 1. Unlike the performance and round robin policies, where order does not matter, the load balancer chooses an active service based on its position in the list of selected DNS names. Choose the cloud service that will act as the primary and then move it to the top of the list. Arrange the remaining (standby) services in the order in which they should be activated in case the preceding services in the list fail. To change the order of a cloud service, select its DNS name in the list and then click the up arrow button until the service is in the desired position.
 
-	![Creating a failover Traffic Manager policy](images/creating-a-failover-traffic-manager-policy.png?raw=true "Creating a failover Traffic Manager policy")
+	![Creating a failover Traffic Manager policy](Images/creating-a-failover-traffic-manager-policy.png?raw=true "Creating a failover Traffic Manager policy")
 
 	_Creating a failover Traffic Manager policy_
 
@@ -569,13 +569,13 @@ In this task, you test the failover policy created previously.
 
 1. In the home page, the bottom half shows the status of each of your cloud services. Make sure that they are all Online.
 
-	![Examining the status of the cloud services](images/examining-the-status-of-the-hosted-services.png?raw=true "Examining the status of the cloud services")
+	![Examining the status of the cloud services](Images/examining-the-status-of-the-hosted-services.png?raw=true "Examining the status of the cloud services")
 
 	_Examining the status of the cloud services_
 
 1. In the **Hosted Service Status** list, locate the primary service and then click **Disable** under **Manage Traffic**. Notice that the status of the service immediately changes to _Offline_ and the **Health Monitor Timeout** column begins displaying a timer.
  
-	![Disabling a cloud service to simulate a failure](images/disabling-a-hosted-service-to-simulate-a-fail.png?raw=true "Disabling a cloud service to simulate a failure")
+	![Disabling a cloud service to simulate a failure](Images/disabling-a-hosted-service-to-simulate-a-fail.png?raw=true "Disabling a cloud service to simulate a failure")
 
 	_Disabling a cloud service to simulate a failure_
 
@@ -611,13 +611,13 @@ In this task, you disable one of the cloud services in the round robin policy an
 
 1. Locate and expand the round robin policy. Then, select one of the cloud services assigned to this policy and click **Disable Traffic** on the ribbon.
 
-	![Managing traffic to individual host services in a policy](images/managing-traffic-to-individual-host-services.png?raw=true "Managing traffic to individual host services in a policy")
+	![Managing traffic to individual host services in a policy](Images/managing-traffic-to-individual-host-services.png?raw=true "Managing traffic to individual host services in a policy")
 
 	_Managing traffic to individual host services in a policy_
 
 1. In the **Disable Cloud Service in Traffic Manager policy** message box, click **Yes** to confirm that you wish to disable traffic to the selected service.
 
-	![Disabling traffic to a cloud service in a Traffic Manager policy](images/disabling-traffic-to-a-hosted-service-in-a-tr.png?raw=true "Disabling traffic to a cloud service in a Traffic Manager policy")
+	![Disabling traffic to a cloud service in a Traffic Manager policy](Images/disabling-traffic-to-a-hosted-service-in-a-tr.png?raw=true "Disabling traffic to a cloud service in a Traffic Manager policy")
 
 	_Disabling traffic to a cloud service in a Traffic Manager policy_ 
 
@@ -631,7 +631,7 @@ In this task, you disable one of the cloud services in the round robin policy an
 
 1. Re-enable the cloud service in the round robin policy. To do this, in the Management Portal, expand the round robin policy, select the disabled cloud service, and then click **Enable Traffic** on the ribbon.
 
-	![Re-enabling traffic to a cloud service](images/re-enabling-traffic-to-a-hosted-service.png?raw=true "Re-enabling traffic to a cloud service")
+	![Re-enabling traffic to a cloud service](Images/re-enabling-traffic-to-a-hosted-service.png?raw=true "Re-enabling traffic to a cloud service")
 
 	_Re-enabling traffic to a cloud service_
 
@@ -648,13 +648,13 @@ You can temporarily disable a Traffic Manager policy to prevent it from routing 
 
 1. Select the round robin policy and then click **Disable Policy** on the ribbon.
 
-	![Disabling a Traffic Manager policy](images/disabling-a-traffic-manager-policy.png?raw=true "Disabling a Traffic Manager policy")
+	![Disabling a Traffic Manager policy](Images/disabling-a-traffic-manager-policy.png?raw=true "Disabling a Traffic Manager policy")
 
 	_Disabling a Traffic Manager policy_
 
 1. In the **Disable Traffic Manager policy** message box, click **Yes** to confirm that you wish to disable traffic to the specified policy.
 
-	![Disabling traffic via the URL of a Traffic Manager policy](images/disabling-traffic-via-the-url-of-a-traffic-ma.png?raw=true "Disabling traffic via the URL of a Traffic Manager policy")
+	![Disabling traffic via the URL of a Traffic Manager policy](Images/disabling-traffic-via-the-url-of-a-traffic-ma.png?raw=true "Disabling traffic via the URL of a Traffic Manager policy")
 
 	_Disabling traffic via the URL of a Traffic Manager policy_
 
@@ -662,13 +662,13 @@ You can temporarily disable a Traffic Manager policy to prevent it from routing 
 
 1. Next, in the **Tools** menu of the browser, choose **Internet Options** to open the **Internet Options** dialog, then select the **General** tab and, under **Browsing history**, click **Delete**. 
 	 
-	![Managing the browsing history](images/managing-the-browsing-history.png?raw=true "Managing the browsing history")
+	![Managing the browsing history](Images/managing-the-browsing-history.png?raw=true "Managing the browsing history")
 
 	_Managing the browsing history_
 
 1. In the **Delete Browsing History** dialog, click **Delete files**. When prompted, click **Yes** to confirm that you want to delete all temporary Internet Explorer files. Finally, click **Close** followed by **OK** to close all open dialogs.
 	 
-	![Deleting temporary Internet files](images/deleting-temporary-internet-files.png?raw=true "Deleting temporary Internet files")
+	![Deleting temporary Internet files](Images/deleting-temporary-internet-files.png?raw=true "Deleting temporary Internet files")
 	
 	_Deleting temporary Internet files_
 	
@@ -676,13 +676,13 @@ You can temporarily disable a Traffic Manager policy to prevent it from routing 
 
 1. Now, refresh the page again and notice that the browser cannot display the application because the disabled policy no longer routes traffic with the specified URL.
 
-	![Browser window showing that the application is no longer accessible through the disabled policy](images/browser-window-showing-that-the-application-i.png?raw=true "Browser window showing that the application is no longer accessible through the disabled policy")
+	![Browser window showing that the application is no longer accessible through the disabled policy](Images/browser-window-showing-that-the-application-i.png?raw=true "Browser window showing that the application is no longer accessible through the disabled policy")
 
 	_Browser window showing that the application is no longer accessible through the disabled policy_
 
 1. Re-enable the round robin policy. To do this, in the Management Portal, select the policy and then click **Enable Policy** on the ribbon.
 
-	![Enabling a Traffic Manager policy](images/enabling-a-traffic-manager-policy.png?raw=true "Enabling a Traffic Manager policy")
+	![Enabling a Traffic Manager policy](Images/enabling-a-traffic-manager-policy.png?raw=true "Enabling a Traffic Manager policy")
 
 	_Enabling a Traffic Manager policy_ 
 
@@ -712,19 +712,19 @@ Follow these steps to save the credentials that allow you to deploy an applicati
 
 1. It will prompt the **Publish Windows Azure Application** dialog. To publish an application, you first need to create the necessary credentials to access your Microsoft account. To add a new set of credentials to your configuration, expand the **Subscription** drop down list and select **Manage**. If you have already added your credentials, chose them and skip this task.
 
-	![Adding Subscription’s credentials in Visual Studio](images/adding-subscriptions-credentials-in-visual-st.png?raw=true "Adding Subscription’s credentials in Visual Studio")
+	![Adding Subscription’s credentials in Visual Studio](Images/adding-subscriptions-credentials-in-visual-st.png?raw=true "Adding Subscription’s credentials in Visual Studio")
 
 	_Adding Subscription’s credentials in Visual Studio_
 
 1. It will prompt a dialog to manage your Windows Azure authentication settings. Click **New** to define you authentication settings.
 
-	![Adding Authentication Settings](images/adding-authentication-settings.png?raw=true "Adding Authentication Settings")
+	![Adding Authentication Settings](Images/adding-authentication-settings.png?raw=true "Adding Authentication Settings")
 
 	_Adding Authentication Settings_
 
 1. To create the credentials, you require a certificate. If Visual Studio cannot find a suitable certificate in your personal certificate store, it will prompt you to create a new one; otherwise, in the **Windows Azure Project Management Authentication** dialog, expand the drop down list labeled **Create or select an existing certificate for authentication** and then select **Create**.
 
-	![Creating a new certificate for authentication](images/creating-a-new-certificate-for-authentication.png?raw=true "Creating a new certificate for authentication")
+	![Creating a new certificate for authentication](Images/creating-a-new-certificate-for-authentication.png?raw=true "Creating a new certificate for authentication")
 
 	_Creating a new certificate for authentication_
 
@@ -732,19 +732,19 @@ Follow these steps to save the credentials that allow you to deploy an applicati
 
 1. In the **Create Certificate** dialog, enter a suitable name for the certificate, for example, _AzureMgmtVS_, and then click **OK**.
 
-	![Creating a new management certificate](images/creating-a-new-management-certificate.png?raw=true "Creating a new management certificate")
+	![Creating a new management certificate](Images/creating-a-new-management-certificate.png?raw=true "Creating a new management certificate")
 
 	_Creating a new management certificate_
 
 1. Back in the **Windows Azure Project Management Authentication** dialog, ensure that the newly created certificate is selected. Notice that the issuer for this certificate is the Windows Azure Tools.
 
-	![Selecting a certificate for the credentials](images/selecting-a-certificate-for-the-credentials.png?raw=true "Selecting a certificate for the credentials")
+	![Selecting a certificate for the credentials](Images/selecting-a-certificate-for-the-credentials.png?raw=true "Selecting a certificate for the credentials")
 
 	_Selecting a certificate for the credentials_
 
 1. Now, click the link labeled **Copy the full path**. This copies the path of the certificate public key file to the clipboard.
 
-	![Copying the path of the generated certificate public key file to the clipboard](images/copying-the-path-of-the-generated-certificate.png?raw=true "Copying the path of the generated certificate public key file to the clipboard")
+	![Copying the path of the generated certificate public key file to the clipboard](Images/copying-the-path-of-the-generated-certificate.png?raw=true "Copying the path of the generated certificate public key file to the clipboard")
 
 	_Copying the path of the generated certificate public key file to the clipboard_ 
 
@@ -752,13 +752,13 @@ Follow these steps to save the credentials that allow you to deploy an applicati
 
 1. Click **OK** to dismiss the confirmation message box and then save the path in the clipboard to a safe location. You will need this value shortly, when you upload the certificate to the management portal.
 
-	![Confirmation that the file path was copied to the clipboard successfully](images/confirmation-that-the-file-path-was-copied-to.png?raw=true "Confirmation that the file path was copied to the clipboard successfully")
+	![Confirmation that the file path was copied to the clipboard successfully](Images/confirmation-that-the-file-path-was-copied-to.png?raw=true "Confirmation that the file path was copied to the clipboard successfully")
 
 	_Confirmation that the file path was copied to the clipboard successfully_
 
 1. Now, in the **Windows Azure Project Management Authentication** dialog, click the link labeled **Windows Azure Portal** to open a browser window and navigate to the Management Portal.
 
-	![Opening the Developer Portal in your browser](images/opening-the-developer-portal-in-your-browser.png?raw=true "Opening the Developer Portal in your browser")
+	![Opening the Developer Portal in your browser](Images/opening-the-developer-portal-in-your-browser.png?raw=true "Opening the Developer Portal in your browser")
 
 	_Opening the Developer Portal in your browser_
 
@@ -770,19 +770,19 @@ Follow these steps to save the credentials that allow you to deploy an applicati
 
 1. To complete the setup of your credentials, switch back to the **Windows Azure Project Management Authentication** dialog, enter your **subscription ID** and a name to identify the credentials and then click **OK**. 
 
-	![Completing the credential setup procedure](images/completing-the-credential-setup-procedure.png?raw=true "Completing the credential setup procedure")
+	![Completing the credential setup procedure](Images/completing-the-credential-setup-procedure.png?raw=true "Completing the credential setup procedure")
 
 	_Completing the credential setup procedure_
 
 1. After you confirm the creation of the new credentials, Visual Studio uses them to access the management service to verify that the information that you provided is valid and notifies you if authentication fails. If this occurs, verify the information that you entered and then re-attempt the operation once again.
 
-	![Authentication failure while accessing the management service](images/authentication-failure-while-accessing-the-ma.png?raw=true "Authentication failure while accessing the management service")
+	![Authentication failure while accessing the management service](Images/authentication-failure-while-accessing-the-ma.png?raw=true "Authentication failure while accessing the management service")
 
 	_Authentication failure while accessing the management service_ 
 
 1. In the **Windows Azure Project Management Settings** dialog, you will see the recently created Authentication setting. Click **Close** to return to the Publish Wizard. You will continue with the publishing process in the next task.
  
-	![Managing Authentication settings](images/managing-authentication-settings.png?raw=true "Managing Authentication settings")
+	![Managing Authentication settings](Images/managing-authentication-settings.png?raw=true "Managing Authentication settings")
 
 	_Managing Authentication settings_
 
