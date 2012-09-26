@@ -6,7 +6,6 @@
 				hint="VWDOrVs11AzurePack"
                 name="Windows Azure SDK for .NET"
                 helpLink=""
-                disableSkip="false"
                 type="WebPI" />
     </dependencies>
 </DependencyCheckerConfiguration>
