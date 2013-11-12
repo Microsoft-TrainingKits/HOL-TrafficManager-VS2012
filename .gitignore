@@ -51,3 +51,4 @@ coverage
 *.docstates
 *.InstallLog
 packages
+entry.xml
